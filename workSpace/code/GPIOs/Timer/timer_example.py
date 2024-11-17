@@ -1,10 +1,7 @@
 # Complete project details at https://RandomNerdTutorials.com/micropython-programming-with-esp32-and-esp8266/
 
-from machine import Pin
-from time import sleep
-
-led = Pin(21, Pin.OUT)
-
+from time import time,sleep
 while True:
-  led.value(not led.value())
-  sleep(0.5)
+  current_time = time()
+  print(current_time)
+  sleep(1)

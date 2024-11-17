@@ -1,10 +1,11 @@
 # Complete project details at https://RandomNerdTutorials.com/micropython-programming-with-esp32-and-esp8266/
 
-from machine import Pin
+from machine import TouchPad, Pin
 from time import sleep
 
-led = Pin(21, Pin.OUT)
+touch_pin = TouchPad(Pin(4))
 
 while True:
-  led.value(not led.value())
+  touch_value = touch_pin.read()
+  print(touch_value)
   sleep(0.5)

@@ -1,10 +1,11 @@
 # Complete project details at https://RandomNerdTutorials.com/micropython-programming-with-esp32-and-esp8266/
 
-from machine import Pin
+from machine import Pin, ADC
 from time import sleep
 
-led = Pin(21, Pin.OUT)
+pot = ADC(0)
 
 while True:
-  led.value(not led.value())
-  sleep(0.5)
+  pot_value = pot.read()
+  print(pot_value)
+  sleep(0.1)

@@ -1,0 +1,11 @@
+For the work thing:
+
+ESP32 sensors
+---> MQTT
+RPi Broker/WebServer
+---> REST OR WebSockets
+PLY-DEV-11 Python ETL scripts
+
+WSL IPAddr = 192.168.0.193
+RP3 IPAddr = 192.168.0.239
+
