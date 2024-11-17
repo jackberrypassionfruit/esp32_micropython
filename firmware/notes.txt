@@ -1,2 +1,2 @@
-esptool.py --chip esp32s3 --port COM3 erase_flash
-esptool --chip esp32s3 --port COM3 write_flash -z 0 .\firmware\ESP32_GENERIC_S3-20241025-v1.24.0.bin
+esptool --chip esp32s3 --port COM4 erase_flash
+esptool --chip esp32s3 --port COM4 write_flash -z 0 .\firmware\ESP32_GENERIC_S3-20241025-v1.24.0.bin
