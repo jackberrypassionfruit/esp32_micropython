@@ -1,0 +1,14 @@
+
+in lvgl/demo_lvgl/main.py:
+
+create the label, LEDvalueLbl, and update with color val on clicks
+this will help render the UI hopefully
+
+
+in /main.py
+trying to add my RGB LED control page to the multipage
+weird errors:
+    name 'LEDvalueLbl' isn't defined
+    can't cancel self
+    
+maybe the functions have to be defined in a different order?

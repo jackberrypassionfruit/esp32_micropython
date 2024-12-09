@@ -116,7 +116,7 @@ class App(Updater):
             self.disp = ili9XXX.ili9341(clk=14, cs=15,
                                        dc=2, rst=12, power=23, miso=12,
                                        mosi=13, width=320, height=240,
-                                       rot=0xC0, colormode=ili9XXX.COLOR_MODE_RGB,
+                                       rot=0x00, colormode=ili9XXX.COLOR_MODE_RGB,
                                        double_buffer=False, factor=16, asynchronous=True)
         except Exception as e:
             print(f'Display initialization failed: {e}')
