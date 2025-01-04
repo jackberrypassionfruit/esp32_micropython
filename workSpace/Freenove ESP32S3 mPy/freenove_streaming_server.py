@@ -59,7 +59,7 @@ print("Camera ready?: ", cam)
 sta = Sta()              # Station mode (i.e. need WiFi router)
 sta.wlan.disconnect()    # disconnect from previous connection
 AP = "<your SSID>"  # change to your SSID
-PWD = "<your PWD>"  # change to your password
+PW = "<your PWD>"  # change to your password
 sta.connect(AP, PW) # connet to dlink
 sta.wait()
 
