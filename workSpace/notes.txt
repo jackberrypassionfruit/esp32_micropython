@@ -12,3 +12,11 @@ weird errors:
     can't cancel self
     
 maybe the functions have to be defined in a different order?
+
+
+Freenove ESP32S3 CAM 
+    - Currently has the pre-compiled Freenove camera firmware
+
+Other ESP32S3 CAM
+    - Currently has Generic ESP32S3 firmware
+    

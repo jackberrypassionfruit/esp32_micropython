@@ -34,7 +34,7 @@ dropped = 0 # drop frames count
 #vid = cv2.VideoCapture('http://192.168.4.44/ali/Baba40Robrs') # open webcam capture
 
 # 192.168.4.70 - XIAO esp32s3
-vid = cv2.VideoCapture('http://192.168.0.142/xiao/Hi-Xiao-Ling') # open webcam capture
+vid = cv2.VideoCapture('http://192.168.0.111/xiao/Hi-Xiao-Ling') # open webcam capture
 
 while True:
     ret, frame = vid.read() # get frame-by-frame
@@ -46,7 +46,7 @@ while True:
             break
     else:
         dropped += 1
-        if dropped > 100:
+        if dropped > 20:
            print("Server is down")
            break
 

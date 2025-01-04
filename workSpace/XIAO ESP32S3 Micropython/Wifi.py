@@ -29,8 +29,8 @@ import network
 
 class Sta:
 
-   AP = "TP-Link_1936"  # change to your SSID
-   PWD = "97792710"  # change to your password
+   AP = "<your SSID>"  # change to your SSID
+   PWD = "<your PWD>"  # change to your password
 
    def __init__(my, ap='', pwd=''):
       network.WLAN(network.AP_IF).active(False) # disable access point
