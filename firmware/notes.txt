@@ -1,2 +1,2 @@
-esptool --chip esp32s3 --port COM9 erase_flash
-esptool --chip esp32s3 --port COM9 --baud 2000000 write_flash -z 0 .\firmware\
+esptool --chip esp32 --port COM14 erase_flash
+esptool --chip esp32 --port COM14 --baud 2000000 write_flash -z 0x1000 .\firmware\

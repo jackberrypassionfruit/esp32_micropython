@@ -5,7 +5,7 @@ microdot
 The ``microdot`` module defines a few classes that help implement HTTP-based
 servers for MicroPython and standard Python.
 """
-import uasyncio as asyncio
+import asyncio
 import io
 import json
 import time

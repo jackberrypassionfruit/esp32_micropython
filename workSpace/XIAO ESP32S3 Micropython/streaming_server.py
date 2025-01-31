@@ -55,8 +55,8 @@ print("Camera ready?: ", cam)
 # connect to access point
 sta = Sta()              # Station mode (i.e. need WiFi router)
 sta.wlan.disconnect()    # disconnect from previous connection
-AP = const('<your SSID>') # Your SSID
-PW = const('<your PWD>') # Your password
+AP = const('dlink-3530') # Your SSID
+PW = const('cabbp73520') # Your password
 sta.connect(AP, PW) # connet to dlink
 sta.wait()
 
@@ -117,3 +117,4 @@ else:
    print("System not ready. Please restart")
 
 print('System aborted')
+

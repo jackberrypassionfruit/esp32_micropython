@@ -17,6 +17,7 @@ print(f'Connected! IP: {station.ifconfig()[0]}. Open this IP in your browser')
 app = Microdot()
 
 cam = Camera(frame_size = FrameSize.SVGA, pixel_format=PixelFormat.JPEG, init=False)
+cam.init()
 
 @app.route('/')
 async def index(request):
@@ -39,9 +40,6 @@ async def video_feed(request):
 
     # MicroPython can only use class-based async generators
     class stream():
-        def __init__(self):
-            cam.init()
-
         def __aiter__(self):
             return self
 
